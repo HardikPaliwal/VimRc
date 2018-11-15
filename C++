@@ -1,0 +1,21 @@
+set nocompatible
+syntax on
+set autoindent
+nmap <F2> :w<CR>
+set mouse=a
+map <F5> :e %:p:s,.h$,.X123X,:s,.cc$,.h,:s,.X123X$,.cc,<CR>
+imap <F5> <ESC>:e %:p:s,.h$,.X123X,:s,.cc$,.h,:s,.X123X$,.cc,<CR>
+set number
+set showmatch
+set comments=sl:/*,mb:\ *,elx:\ */
+set tags+=~/.vim/tags/cpp
+set tags+=~/.vim/tags/gl
+set tags+=~/.vim/tags/sdl
+set tags+=~/.vim/tags/qt4
+set cursorline
+highlight ColorColumn ctermbg=darkgray
+imap Q <ESC>:x<cr>
+map Q :x<cr>
+map W :q!<cr>
+imap W <ESC>:q!<cr>
+colorscheme desert
